@@ -1,10 +1,10 @@
 'use client'
 
-import Nav from "@/components/Nav/nav";
+import Sidebar from "@/components/Sidebar/sidebar";
 
 export default function Home() {
 
   return (
-      <Nav></Nav>
+      <Sidebar></Sidebar>
   );
 }
