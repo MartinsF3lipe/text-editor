@@ -1,0 +1,8 @@
+.container {
+    height: 100%;
+    width: 400px;
+    background-color: var(--secondary-background);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

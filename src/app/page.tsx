@@ -1,10 +1,10 @@
 'use client'
 
+import Nav from "@/components/Nav/nav";
 
 export default function Home() {
 
   return (
-    <div >
-    </div>
+      <Nav></Nav>
   );
 }
