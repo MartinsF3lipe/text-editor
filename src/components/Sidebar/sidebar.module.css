@@ -1,8 +1,42 @@
-.container {
+.nav {
     height: 100%;
     width: 400px;
     background-color: var(--secondary-background);
     display: flex;
     flex-direction: column;
-    gap: 20px;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 50px;
+}
+.nav li {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav li svg {
+    margin-right: 16px;
+}
+
+.nav a {
+    padding: 12px 30px;
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 24px;
+    font-weight: 700;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.nav a:hover {
+    background-color: var(--secondary-purple);
+}
+
+.active {
+    background-color: var(--secondary-purple);
 }
