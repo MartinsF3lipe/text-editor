@@ -1,6 +1,6 @@
 .nav {
-    height: 100%;
-    width: 400px;
+    height: 100vh;
+    min-width: 400px;
     background-color: var(--secondary-background);
     display: flex;
     flex-direction: column;

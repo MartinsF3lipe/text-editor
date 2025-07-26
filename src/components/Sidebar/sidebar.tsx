@@ -18,15 +18,15 @@ const pathname = usePathname()
             <ul>
                 <li>
                     <Link href='/' className={pathname === '/' ? Styles.active : ''}>
-                        <RiInboxArchiveLine/>
+                        <RiInboxArchiveLine fontSize="28px"/>
                         All files
                     </Link>
                     <Link href='/favorites' className={pathname === '/favorites' ? Styles.active : ''}>
-                        <RiHeart2Line />
+                        <RiHeart2Line fontSize="28px" />
                         Favorites
                     </Link>
                     <Link href='/editor' className={pathname === '/editor' ? Styles.active : ''}>
-                        <RiEdit2Line />
+                        <RiEdit2Line fontSize="28px" />
                         Editor
                     </Link>
                 </li>
