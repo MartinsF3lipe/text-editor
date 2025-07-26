@@ -20,7 +20,7 @@
     margin-right: 16px;
 }
 
-.nav a {
+.nav ul a {
     padding: 12px 30px;
     text-decoration: none;
     color: var(--color-white);
@@ -33,7 +33,7 @@
     align-items: center;
 }
 
-.nav a:hover {
+.nav ul a:hover {
     background-color: var(--secondary-purple);
 }
 

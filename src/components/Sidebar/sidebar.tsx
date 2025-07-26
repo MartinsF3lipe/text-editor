@@ -5,6 +5,8 @@ import { RiInboxArchiveLine,
     RiArrowRightCircleLine, 
     RiEdit2Line } from "react-icons/ri";
 
+import ButtonFile from "../Buttonfile/buttonFile";
+
 
 import Styles from "./sidebar.module.css"
 import Link from "next/link";
@@ -31,6 +33,7 @@ const pathname = usePathname()
                     </Link>
                 </li>
             </ul>
+            <ButtonFile/>
         </nav>
     );
 };
