@@ -12,7 +12,7 @@ interface UserText {
 id: string;
 favorite: boolean;
 title: string;
-createdAt: string;
+updatedAt: number;
 slug: string;
 content: Content;
 }
@@ -26,18 +26,14 @@ export async function getUserText() {
     const query = gql`
         query MyQuery {
             files {
-                content {
-                    text
-                }
+                content
                 id
                 favorite
-                createdAt
-                slug
+                updatedAt
                 title
             }
         }
     `
-
     const data = await client.request<HygraphQueryResult>(query);
     return data
 }

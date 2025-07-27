@@ -1,4 +1,6 @@
 import { getUserText } from '@/lib/hygraph'
+import { formatDate } from '@/utils/format-date'
+
 import Styles from "./listfiles.module.css"
 
 import { IoTrashOutline } from 'react-icons/io5'
@@ -16,7 +18,7 @@ export default async function ListFIles(){
                     <li key={item.id}>
                         <div>
                             <p>{item.title}</p>
-                            <span>Last Update: {new Date(item.createdAt).toLocaleDateString()}</span>
+                            <span>Last Update: {formatDate(item.updatedAt).message}</span>
                         </div>
                         <div className={Styles.buttons}>
                             <RiHeart2Fill fontSize="28px"/>
